@@ -1,0 +1,177 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+*:not(i){
+    font-family:"Poppins",sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    background-color:rgba(93, 89, 89, 0.5);
+    width:90vmin;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    padding:80px 50px;
+    border-radius:20px;
+    box-shadow:0px 20px 40px rgba(255, 255, 255, 0.2);
+}
+.container:hover{
+    background-color: black;
+}
+.search-box{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.search-box input{
+    padding:10px;
+    width:70%;
+    border:none;
+    outline:none;
+    border-bottom:  3px solid #230b8f;
+    font-size:16px;
+}
+.search-box button{
+    padding: 15px 0;
+    width:20%;
+    border:none;
+    outline:none;
+    background-color:#230b8f;
+    font-weight: bold;
+    color:#ffffff;
+    border-radius:5px;
+}
+.result{
+    position:relative;
+}
+.result h3{
+    font-size:30px;
+    color:azure;
+}
+.result .word{
+    display:flex;
+    justify-content: space-between;
+    margin-top:80px;
+}
+.result button{
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.result .details{
+    display:flex;
+    gap:10px;
+    color:#b3b6d4;
+    margin:5px 0 20px 0;
+    font-size:14px;
+}
+.word-meaning{
+    color: #575a7b;
+}
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+/* Modal styles */  
+.modal {  
+    display: none; /* Hidden by default */  
+    position: fixed;  
+    z-index: 1; /* Sit on top */  
+    left: 0;  
+    top: 0;  
+    width: 100%; /* Full width */  
+    height: 100%; /* Full height */  
+    overflow: auto; /* Enable scroll if needed */  
+    background-color: rgb(0,0,0); /* Fallback color */  
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */  
+}  
+
+.modal-content {  
+    background-color: #fefefe;  
+    margin: 15% auto; /* 15% from the top and centered */  
+    padding: 20px;  
+    border: 1px solid #888;  
+    width: 80%; /* Could be more or less, depending on screen size */  
+}  
+
+.close {  
+    color: #aaa;  
+    float: right;  
+    font-size: 28px;  
+    font-weight: bold;  
+}  
+
+.close:hover,  
+.close:focus {  
+    color: black;  
+    text-decoration: none;  
+    cursor: pointer;  
+}
+#loginForm{
+    width:100%;
+    height:50%;
+    justify-content: space-between;
+}
+#username, #password{
+    padding:20px;
+    border:none;
+    outline:none;
+    color:black; /* Default blue */  
+    transition: color 0.3s ease;
+    text-decoration: none; /* Remove default underline */  
+    position: relative;
+    font-weight: bold;
+
+}
+#username:hover,#password:hover{
+    color:white;
+    font-weight: bold;
+    content: "";    
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    height: 2px; /* Underline thickness */  
+    background: black; /* Color of underline */  
+    transition: width 0.3s; /* Animation effect */  
+    width: 100%;
+}
+.modal{
+    transition: box-shadow 0.3s ease;
+}
+.model:hover{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+#sub, #signup-btn {  
+    border: none;  
+    outline: none;  
+    height: 30px; /* Increase height for better accessibility */  
+    padding:5px;/* Add padding to the left and right */  
+    font-size: 16px; /* Larger font size for better readability */  
+    font-weight: bold;  
+    text-transform: uppercase; /* Make text uppercase for uniformity */  
+    color: white; /* White text color */  
+    background-color: black; /* Default primary color */  
+    border-radius: 5px; /* Rounded corners */  
+    cursor: pointer; /* Show pointer cursor on hover */  
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */  
+}  
+
+/* Hover Effect */  
+#sub:hover, #signup-btn:hover {  
+    background-color: #3399ff; /* Lighter blue on hover */  
+    transform: translateY(-2px); /* Slight lift effect */  
+}  
